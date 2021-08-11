@@ -1,8 +1,130 @@
-.App {
+/* .App {
   text-align: center;
+  background-image: url("images/hp3.jpg")
+} */
+
+.background {
+  text-align: center;
+  color: red;
+  font-size: xx-large;
+  margin: 0;
+  background-image: url("images/hp2.jpg");
+  height: 655px; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  
 }
 
-.App-logo {
+.img1 {
+  position: absolute;
+  top : 10px;
+  left : 375px;
+  height: 300px;
+  width: 47%;
+  opacity: 0;
+  animation-name: upper;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+}
+
+@keyframes upper{
+  0%{left:375;top:10;height: 10px;opacity: 0;}
+  100%{left:375;top:10;height: 300px;opacity: 1;}
+  /* 0%{left: 375px;top: -300px;opacity: 1;}
+  100%{left: 375px;top: 10px;opacity: 1;} */
+}
+
+.img2 {
+  position: absolute;
+  top: 230;
+  left: 460px;
+  height : 450px;
+  /* width:auto; */
+  opacity :0;
+  animation-name: lower;
+  animation-duration: 6s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-delay: 3s;
+}
+
+@keyframes lower{
+  0%{left: 460px;top: 650px;opacity: 0;}
+  100%{left: 460px;top: 230px;opacity: 1;}
+  /* 0%{left: 655; height: 0px; opacity: 1;}
+  100%{left:460; height: 450px; opacity: 1;} */
+}
+
+.img3 {
+  position: absolute;
+  top : 400px;
+  transform: scaleY(-1);
+  left: 375px;
+  height: 170px;
+  opacity: 0;
+  
+  animation-name: lowerleft;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lowerleft{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.img4 {
+  position: absolute;
+  top : 400px;
+  transform: scaleX(-1) scaleY(-1);
+  left: 800px;
+  height: 170px;
+  opacity: 0;
+
+  animation-name: lowerright;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lowerright{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+.hb {
+  margin: 0;
+  padding-top: 100px;
+  position: relative;
+}
+
+.gift {
+  top:250px;
+  left: 560px;
+  position: absolute;
+  height: 250px;
+  opacity: 0;
+
+  animation-name: gifting;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes gifting{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +157,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
